@@ -1,0 +1,437 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+        /**** My styles ****/
+/*** Main page ***/
+html,
+body {
+  font-family: 'Cinzel', serif;
+  height: 100%;
+}
+
+/*Navigation bar*/
+.navbar {
+  position: fixed;  
+  display: inline-block;
+  z-index: 1;  
+}
+
+.cont1 {
+  position: relative;  
+  margin-top: 7em;
+}
+
+.f2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: black;
+  background: white;  
+  padding: 0.7em;
+  margin-left: 1em;
+  border-radius: 0.5em;
+}
+
+#scrollToTop {
+  display: none;
+  top: 0.6em;
+  padding: 0.7em;
+}
+
+.sign {
+  left: 3em;
+  background-color: rgb(255,127,80);
+}
+
+.navbar ul li a {    
+  color: black;  
+  padding: 0.6em;
+}
+
+.navbar .f2:hover {
+  background-color: rgba(0,0,0, 0.1);
+}
+.navbar .f2.sign:hover {    
+  background-color: rgba(255,127,80, 0.7);
+  opacity: 0.8;
+}
+/*******************/
+
+/*Main elements*/
+.container-fluid {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;  
+}
+.c1 { background: lightskyblue; }
+.c2 { background: lightcoral; }
+.c3 { background: whitesmoke; }
+
+h1 {
+  font-size: 2em;
+}
+.logo {
+  font-size: 3em;
+}
+
+h2 {
+font-size: 1.7em;
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+margin-bottom: 10px;
+padding:15px
+}
+
+p {
+  font-size: 1.3em;
+}
+/*******************/
+
+/*Price slider*/
+.price-box {
+    margin: 2em auto;
+    background: #E9E9E9;
+    border-radius: 10px;
+    padding: 40px 15px;
+    width: 40%;
+}
+
+.ui-widget-content {
+    border: 1px solid #bdc3c7;
+    background: #e1e1e1;
+    color: #222222;
+    margin-top: 4px;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 5em;
+    height: 2.2em;
+    cursor: default;
+    margin: 0 -40px auto !important;
+    text-align: center;	
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.ui-slider .ui-slider-handle .glyphicon {
+    color: #FFFFFF;
+    margin: 0 3px; 
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.ui-corner-all {
+    border-radius: 20px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.9em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid #f9f9f9;
+    background: #3498db;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.5em;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: pointer;
+}
+
+.ui-slider a,
+.ui-slider a:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.price, .lead p {
+    font-weight: 600;
+    font-size: 32px;
+    display: inline-block;
+    line-height: 60px;
+}
+
+h4.great {
+    background: #00ac98;
+    margin: 0 0 1.5em 0;
+    padding: 7px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    -moz-box-shadow:    2px 4px 5px 0 #ccc;
+    -webkit-box-shadow: 2px 4px 5px 0 #ccc;
+    box-shadow:         2px 4px 5px 0 #ccc;
+}
+
+.total {
+    position: relative;
+}
+
+.downfor {
+    top: 0.7em;
+}
+
+.total:before {
+	content: "";
+	display: inline;
+	position: absolute;
+	left: 0;
+	bottom: 0.2em;
+	width: 100%;
+	height: 3px;
+	opacity: 0.5;
+}
+
+.price-slider {
+	margin-bottom: 4em;
+}
+
+.price-slider span {
+	font-weight: 200;
+	display: inline-block;
+	color: #7f8c8d;
+	font-size: 13px;
+}
+
+.form-pricing {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.price-form {
+	background: #ffffff;
+	margin-bottom: 0.5em;
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	/*-moz-box-shadow:    0 5px 5px 0 #ccc;
+  	-webkit-box-shadow: 0 5px 5px 0 #ccc;
+  	box-shadow:         0 5px 5px 0 #ccc;*/
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.form-group span.price {
+	font-weight: 200;
+	display: inline-block;
+	color: #7f8c8d;
+	font-size: 14px;
+}
+
+.help-text {
+	display: block;
+	margin-top: 32px;
+	margin-bottom: 10px;
+	color: #737373;
+	position: absolute;
+	font-weight: 200;
+}
+
+.price-form label {
+	font-weight: 200;
+	font-size: 21px;
+}
+
+img.payment {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ui-slider-range-min {
+    background: #2980b9;
+}
+
+hr.style {
+    margin-top: 0;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+/*******************/
+
+
+/*** Login page ***/
+.cont_log {
+  font-size: 1.2em;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  width:30em;
+  height:18em;
+  padding: 1em;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: -15em; /*set to a negative number 1/2 of your width*/
+  border: 1px solid #ccc;
+  background-color: whitesmoke;    
+}
+ 
+input.g[type=text],input.g[type=password] {
+width:99.5%;
+padding:10px;
+margin-top:8px;
+margin-bottom:12px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family:raleway
+}
+input[type=submit] {margin-top:10px;
+width:99.5%;
+background-color:#85CDDB;
+color:#fff;
+border:2px solid #85CDDB;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:10px
+}
+
+
+
+/*** Personal Account Page ***/
+/*Navigation bar*/
+.statisticNav {
+  position: relative;   
+  display: block;
+  text-align: left;
+  padding: 0.5em 0 0 0;
+  background-color: #bdc3c7;
+}
+
+.accountInfo {
+  position: relative;
+  padding-left: 1.6em;
+  line-height: 1.2;
+}
+.accountInfo p  { font-size: 1.7em; }
+.accountInfo h3 { font-size: 3em; }
+
+.accountMenu {
+  position: relative;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  padding: 0.1em;
+}
+.accountMenu ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.accountTables { 
+  padding: 0;
+}
+.accountTables ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.menuButton {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: black;
+  background: white;  
+  padding: 0.3em 0.6em 0.3em 0.6em;
+  margin-right: 1em;
+  border-radius: 0.5em;
+}
+.menuButton:hover {
+  text-decoration: none;
+  background-color: lightblue;
+}
+
+.tablesButton {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: black;
+  background: white;
+  padding: 0.5em 1em 1em 1em;
+  margin-right: 0.4em;
+}
+/********************************/
+
+/*Table with statistics*/  
+.statTable {
+  margin: 2em 0 0 0;
+}
+
+
+
+
+
+
+    /*** Side slide menu for mobiles and tablets ***/
+    @media screen and (max-width: 740px) {
+
+        .mobmenu {
+            position: fixed;
+            display: block;
+            width: 80%; 
+            height: 100%;
+            z-index: 10;
+        }
+
+        .nav, .navbar { display: none; }
+
+    }
+    
