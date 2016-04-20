@@ -21,28 +21,70 @@
     </head>
     <body>
       <div class="container-fluid">
-        <div class="row statisticNav"> 
-            <div class="col-md-3 col-xs-3 accountInfo">
-              <p>Simon Baker (user name)</p>
-              <h3>Flexics</h3>
+        <div class="row statisticNav company"> 
+            <div class="accountInfo">
+              <p>Simon Baker</p>
+              <h3>Flexics Inc.</h3>
             </div>               
-            <div class="col-md-9 col-xs-9 accountMenu">
-              <ul>
+            <div class="accountMenu">
+              <ul class="u1">
                 <li><a href="Login.html" class="menuButton">Log out</a></li>
                 <li><a href="#" class="menuButton">Change user</a></li>
               </ul>
-            </div>   
-            <div class="col-md-9 col-xs-9 accountTables">
               <ul>
-                <li><a href="#" class="tablesButton">Overview of the curent year</a></li>
-                <li><a href="#" class="tablesButton">Manage employees</a></li>
+                <li><a href="#" class="tablesButton active">Overview of the current year</a></li>
+                <li><a href="ManageEmployees.html" class="tablesButton">Manage employees</a></li>
                 <li><a href="#" class="tablesButton">History</a></li>
-              </ul>
-            </div>   
+              </ul>  
+            </div>
         </div>
-        <div class="statTable">
-          <table>
-            <p>Here will be the table with a statistics</p>
+        <div class="contTable table-responsive">
+          <table class="table table-bordered table-condensed">
+           <caption>Name of a month</caption>
+           <tr class="tableMain">
+            <th>Employee</th>
+            <th rowspan="2">Total</th>
+            <th colspan="31">Day number</th>            
+           </tr>
+           <tr class="tableDitail">
+            <th>(first name, second name)</th>         
+            <th>1</th><th>2</th><th>3</th>
+            <th>4</th><th>5</th><th>6</th>
+            <th>7</th><th>8</th><th>9</th>
+            <th>10</th><th>11</th><th>12</th>
+            <th>13</th><th>14</th><th>15</th>
+            <th>16</th><th>17</th><th>18</th>
+            <th>19</th><th>20</th><th>21</th>
+            <th>22</th><th>23</th><th>24</th>
+            <th>25</th><th>26</th><th>27</th>  
+            <th>28</th><th>29</th><th>30</th>
+            <th>31</th>            
+           </tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Aare Jonson</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Adrian Clinton</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Alan Harper</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Bruce Willis</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Britany Hopkins</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Conor Safrano</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">David Beckham</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Donald Trump</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Dora Hilary</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Edgar Poe</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fred Durst</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fiona Johnson</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Gordon Freeman</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Hanna Montana</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">James Patric</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Jessica Alba</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">John Snow</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Kurt Cobain</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Monica Bellucci </a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Nora Jones</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Petter Parker</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Peris Hilton</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Roger Federer</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Sasha Gray</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Tatyana Kotova</a></td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>36</td><td>23</td><td>3,5</td><td>3,5</td></tr>
           </table>      
         </div>
       </div>

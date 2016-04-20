@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manage Employees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+        <!-- My Styles -->
+        <link href="css/maincss.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row statisticNav company"> 
+            <div class="accountInfo">
+              <p>Simon Baker</p>
+              <h3>Flexics Inc.</h3>
+            </div>               
+            <div class="accountMenu">
+              <ul class="u1">
+                <li><a href="Login.html" class="menuButton">Log out</a></li>
+                <li><a href="#" class="menuButton">Change user</a></li>
+              </ul>
+              <ul>
+                <li><a href="PersonalAccountPage.html" class="tablesButton">Overview of the current year</a></li>
+                <li><a href="#"class="tablesButton active">Manage employees</a></li>
+                <li><a href="#" class="tablesButton">History</a></li>
+              </ul>  
+            </div>
+        </div>        
+        <div class="contTable table-responsive">
+          
+          <table class="table table-bordered table-condensed">
+          <div>
+            <button>Add new employee</button>
+            <button>Remove new employee</button>
+          </div>
+           <caption>List of the employees</caption>
+           <tr class="tableMain">
+            <th>Employee</th>
+            <th>IMEI</th>
+            <th>Last location and time</th> 
+            <th>Rights of use</th> 
+           </tr>           
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Aare Jonson</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Adrian Clinton</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Alan Harper</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Bruce Willis</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Britany Hopkins</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Conor Safrano</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">David Beckham</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Donald Trump</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Dora Hilary</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Edgar Poe</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fred Durst</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fiona Johnson</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Gordon Freeman</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Hanna Montana</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">James Patric</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Jessica Alba</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">John Snow</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Kurt Cobain</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Monica Bellucci </a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Nora Jones</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Petter Parker</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Peris Hilton</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Roger Federer</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Sasha Gray</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
+           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Tatyana Kotova</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+          </table>      
+        </div>
+      </div>
+      
+    </body>
+</html>

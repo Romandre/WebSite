@@ -1,8 +1,6 @@
 
 $(document).ready(function(){
     	
-    //******* Main Page *******//
-    
     $("#c1").click(function (e){
                 $('html, body').animate({
                     scrollTop: $(".c1").offset().top
@@ -40,7 +38,7 @@ $(document).ready(function(){
             
      //Check to see if the window is top if not then display button
 	$(window).scroll(function(){
-		if ($(this).scrollTop() > 700) {
+		if ($(this).scrollTop() > 500) {
 			$('#scrollToTop').fadeIn();
 		} else {
 			$('#scrollToTop').fadeOut();
@@ -51,9 +49,8 @@ $(document).ready(function(){
 	$('#scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0}, 1000);
 		return false;
-	});    
+            });   
                 
-        
 });
 
 

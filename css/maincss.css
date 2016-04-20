@@ -27,9 +27,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
-}
 blockquote, q {
   quotes: none;
 }
@@ -46,57 +43,80 @@ table {
 
         /**** My styles ****/
 /*** Main page ***/
-html,
-body {
-  font-family: 'Cinzel', serif;
-  height: 100%;
-}
+html, body { height: 100%; }
 
 /*Navigation bar*/
 .navbar {
   position: fixed;  
   display: inline-block;
+  background-color: rgba(250,250,250, 0.5);
+  color: black;
+  width: 100%;
   z-index: 1;  
 }
 
-.cont1 {
-  position: relative;  
-  margin-top: 7em;
+.navbar ul { margin: 0.7em 0 0.2em 0;}
+
+.navbar ul li a { 
+  color: black;
+  padding: 0.5em;
+  margin-bottom: 0.7em;
 }
 
-.f2 {
+.f1, .f2, .f3, .f4, .remodal-cancel {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-transform: uppercase;
   color: black;
-  background: white;  
   padding: 0.7em;
   margin-left: 1em;
   border-radius: 0.5em;
 }
+.f1 {}
+.f2 {
+  background-image: -webkit-linear-gradient(top, #ffffff, #fafafa);
+  background-image: -moz-linear-gradient(top, #ffffff, #fafafa);
+  background-image: -ms-linear-gradient(top, #ffffff, #fafafa);
+  background-image: -o-linear-gradient(top, #ffffff, #fafafa);
+  background-image: linear-gradient(to bottom, #ffffff, #fafafa);
+  -webkit-box-shadow: -1px 1px 3px 1px rgba(125,125,125,0.3);
+  -moz-box-shadow:    -1px 1px 3px 1px rgba(125,125,125,0.3); 
+  box-shadow:         -1px 1px 3px 1px rgba(125,125,125,0.3);
+}
+.f3 { background: rgb(83, 155, 227); }
+.f4 { background: rgb(170, 218, 122); }
+.remodal-cancel:hover { 
+  text-decoration: none;
+  color: black;
+}
+.f3:hover { 
+  background: rgba(83, 155, 227, 0.7);
+  text-decoration: none;
+  color: black;
+}
+.f4:hover { 
+  background: rgba(170, 218, 122, 0.7); 
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .f2:hover      { background-color: rgba(0,0,0, 0.2); background-image: none; }
+.navbar .f2.sign:hover { background-color: rgba(255,127,80, 0.6); }
 
 #scrollToTop {
   display: none;
-  top: 0.6em;
+  top: 0.55em;
   padding: 0.7em;
 }
 
 .sign {
   left: 3em;
+  background-image: -webkit-linear-gradient(top, #FF9414, #FF9328);
+  background-image: -moz-linear-gradient(top, #FF9414, #FF9328);
+  background-image: -ms-linear-gradient(top, #FF9414, #FF9328);
+  background-image: -o-linear-gradient(top, #FF9414, #FF9328);
+  background-image: linear-gradient(to bottom, #FF9414, #FF9328);
   background-color: rgb(255,127,80);
-}
-
-.navbar ul li a {    
-  color: black;  
-  padding: 0.6em;
-}
-
-.navbar .f2:hover {
-  background-color: rgba(0,0,0, 0.1);
-}
-.navbar .f2.sign:hover {    
-  background-color: rgba(255,127,80, 0.7);
-  opacity: 0.8;
 }
 /*******************/
 
@@ -106,40 +126,101 @@ body {
   margin: 0 auto;
   text-align: center;
   height: 100%;
+  min-height: 52em;
   width: 100%;  
 }
-.c1 { background: lightskyblue; }
-.c2 { background: lightcoral; }
+.c0 { 
+  background: url(city_big.jpg); 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+.c1 { background-color: whitesmoke  }
+.c2 { background: url(wood.jpg) center; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
 .c3 { background: whitesmoke; }
 
-h1 {
-  font-size: 2em;
+h1, h4, label {    
+  font-family: 'Cinzel', serif;
 }
-.logo {
-  font-size: 3em;
+
+.logo { 
+  font-size: 3.3em;
+  margin-bottom: 0.2em;
 }
+h1    { font-size: 2.1em; }
+h4    { font-size: 1.7em; }
+p     { font-size: 1.3em; }
 
 h2 {
-font-size: 1.7em;
-text-align:center;
-border-radius:10px 10px 0 0;
-margin:-10px -40px;
-margin-bottom: 10px;
-padding:15px
+  font-size: 1.7em;
+  text-align:center;
+  border-radius:10px 10px 0 0;
+  margin:-10px -40px;
+  margin-bottom: 10px;
+  padding:15px
 }
 
-p {
-  font-size: 1.3em;
+.cont1 {
+  position: relative;  
+  margin-top: 7em;
 }
+
+.subcont { 
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  margin-top: 12em; /*set to a negative number 1/2 of your height*/
+  margin-left: -35em; /*set to a negative number 1/2 of your width*/
+}
+
+.iImg {
+  position: relative;  
+  float: left;
+} 
+#TM_icon { width: 27em; }
+
+.iDescr {
+  position: relative;
+  float: right;
+  width: 55%;
+  margin-top: -1.5em;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: whitesmoke;
+  text-align: left;
+  text-shadow: 1px 2px #000000;  
+}
+.iDescr li {
+  margin-top: 2em;
+  line-height: 1.3;
+}
+.popul { 
+  font-size: 1.11em;
+  font-weight: 600;
+  list-style: none;
+  margin-left: -1em;
+  margin-bottom: -0.5em;
+}
+
+
+
 /*******************/
 
 /*Price slider*/
 .price-box {
-    margin: 2em auto;
+    margin: 10em auto;
     background: #E9E9E9;
     border-radius: 10px;
     padding: 40px 15px;
-    width: 40%;
+    width: 50em;
 }
 
 .ui-widget-content {
@@ -151,10 +232,9 @@ p {
 
 .ui-slider .ui-slider-handle {
     position: absolute;
-    z-index: 2;
     width: 5em;
     height: 2.2em;
-    cursor: default;
+    cursor: pointer;
     margin: 0 -40px auto !important;
     text-align: center;	
     line-height: 30px;
@@ -164,6 +244,7 @@ p {
 
 .ui-slider .ui-slider-handle .glyphicon {
     color: #FFFFFF;
+    cursor: pointer;
     margin: 0 3px; 
     font-size: 11px;
     opacity: 0.5;
@@ -191,24 +272,25 @@ p {
     cursor: pointer;
 }
 
-.ui-slider a,
-.ui-slider a:focus {
+.ui-slider a, 
+.ui-slider a:focus
+.ui-slider a:hover {
     cursor: pointer;
     outline: none;
 }
 
 .price, .lead p {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2.6em;
     display: inline-block;
     line-height: 60px;
 }
 
 h4.great {
-    background: #00ac98;
+    background-color: #FF952C;
     margin: 0 0 1.5em 0;
     padding: 7px 15px;
-    color: #ffffff;
+    color: white;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
@@ -224,71 +306,76 @@ h4.great {
 
 .downfor {
     top: 0.7em;
+    text-align: center;
 }
 
 .total:before {
-	content: "";
-	display: inline;
-	position: absolute;
-	left: 0;
-	bottom: 0.2em;
-	width: 100%;
-	height: 3px;
-	opacity: 0.5;
+    content: "";
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 0.2em;
+    width: 100%;
+    height: 3px;
+    opacity: 0.5;
 }
 
 .price-slider {
-	margin-bottom: 4em;
+    margin-bottom: 4em;
 }
 
 .price-slider span {
-	font-weight: 200;
-	display: inline-block;
-	color: #7f8c8d;
-	font-size: 13px;
+    font-weight: 200;
+    display: inline-block;
+    color: #7f8c8d;
+    font-size: 13px;
 }
 
+.form-horizontal { margin-top: 2em; }
+
 .form-pricing {
-	background: #ffffff;
-	padding: 20px;
-	border-radius: 4px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 .price-form {
-	background: #ffffff;
-	margin-bottom: 0.5em;
-	padding: 20px;
-	border: 1px solid #eeeeee;
-	border-radius: 4px;
-	/*-moz-box-shadow:    0 5px 5px 0 #ccc;
-  	-webkit-box-shadow: 0 5px 5px 0 #ccc;
-  	box-shadow:         0 5px 5px 0 #ccc;*/
+    background: #ffffff;
+    margin-bottom: 0.5em;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
 }
+/*
+#amount-label { font-size: 2.7em; }*/
 
 .form-group {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .form-group span.price {
-	font-weight: 200;
-	display: inline-block;
-	color: #7f8c8d;
-	font-size: 14px;
+    font-weight: 200;
+    display: inline-block;
+    color: #7f8c8d;
+    font-size: 14px;
 }
 
 .help-text {
-	display: block;
-	margin-top: 32px;
-	margin-bottom: 10px;
-	color: #737373;
-	position: absolute;
-	font-weight: 200;
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    color: #737373;
+    position: absolute;
+    font-weight: 200;
 }
 
-.price-form label {
-	font-weight: 200;
-	font-size: 21px;
+.price-form label {    
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1.6em;
+    text-align: center;
 }
+.frst { margin-top: 0.5em; }
 
 img.payment {
     display: block;
@@ -306,6 +393,10 @@ hr.style {
     border-bottom: 1px dashed #ccc;
     background: #999;
 }
+
+/*Remodal window*/
+.remodal h1 {margin-bottom: 1em;}
+.remodal p {margin-bottom: 2em;}
 /*******************/
 
 
@@ -315,8 +406,7 @@ hr.style {
   position: absolute;  
   top: 50%;
   left: 50%;
-  width:30em;
-  height:18em;
+  max-width:30em;
   padding: 1em;
   margin-top: -9em; /*set to a negative number 1/2 of your height*/
   margin-left: -15em; /*set to a negative number 1/2 of your width*/
@@ -354,33 +444,30 @@ margin-bottom:10px
   position: relative;   
   display: block;
   text-align: left;
-  padding: 0.5em 0 0 0;
-  background-color: #bdc3c7;
+  padding: 0.5em 0 0 0;  
+  z-index: 1;
 }
+.company  { background-color: rgb(96, 163, 230); }
+.employee { background-color: rgb(170, 218, 122); }
 
 .accountInfo {
   position: relative;
   padding-left: 1.6em;
   line-height: 1.2;
+  float: left;
+  width: 25%
 }
-.accountInfo p  { font-size: 1.7em; }
-.accountInfo h3 { font-size: 3em; }
+.accountInfo p  { font-size: 1.6em; }
+.accountInfo h3 { font-size: 2.6em; }
 
 .accountMenu {
   position: relative;
   margin-top: 0.5em;
-  margin-bottom: 2em;
-  padding: 0.1em;
+  float: right;
+  width: 75%;
 }
+.accountMenu .u1 {margin-bottom: 2em;}
 .accountMenu ul li {
-  text-decoration: none;
-  display: inline;
-}
-
-.accountTables { 
-  padding: 0;
-}
-.accountTables ul li {
   text-decoration: none;
   display: inline;
 }
@@ -401,37 +488,278 @@ margin-bottom:10px
 }
 
 .tablesButton {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
-  color: black;
-  background: white;
+  color: white;
+  background: #737373;
   padding: 0.5em 1em 1em 1em;
   margin-right: 0.4em;
+}
+.tablesButton:hover {
+  background: #E9E9E9;
+  color: black;
+}
+.active {
+  background: white;
+  color: black;
+}
+.active:hover {
+  background: white;
 }
 /********************************/
 
 /*Table with statistics*/  
-.statTable {
-  margin: 2em 0 0 0;
+.contTable {
+  background-color: white;  
+  position: relative;
+  z-index: 3;
 }
 
+table {
+  margin: 2em 0 0 0;
+  width: 100%;
+  border: 1px solid black;
+}
+table td { color: blue; }
 
+.tableMain {
+  font-size: 1.2em;
+  font-weight: bold;  
+}
+
+.tableDitail {
+  font-weight: bold;
+  color: brown;
+}
+
+.tableName {
+ font-size: 1.1em; 
+}
 
 
 
 
     /*** Side slide menu for mobiles and tablets ***/
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 1600px) {        
+  
+        .logo { font-size: 3.1em; }        
+        h4    { font-size: 1.5em; }
+        
+        #TM_icon { width: 25em; margin-left: 3em; }
 
+        .iDescr {          
+          font-size: 1.3em;
+          width: 55%;
+        }
+        .iDescr li {margin-top: 2em;}
+        
+        .price-box { 
+          width: 50em;
+          font-size: 0.9em;
+        }
+    }  
+        
+    @media screen and (max-width: 1400px) { 
+        
+        .navbar { font-size: 0.9em; }
+        
+        .logo { font-size: 3em; }        
+        h4    { font-size: 1.4em; }
+        
+        .subcont { 
+          max-width:85%;
+          margin-top: 12em; /*set to a negative number 1/2 of your height*/
+          margin-left: -35em; /*set to a negative number 1/2 of your width*/
+        }
+        
+        .cont1 { margin-top: 6em; }
+
+        #TM_icon { width: 23em; margin-left: 4em; }
+
+        .iDescr {          
+          font-size: 1.2em;
+          width: 54%;
+        }
+        .iDescr li { margin-top: 2em; }
+        
+        .price-box { 
+          width: 55em;
+          font-size: 0.8em; 
+        }
+        
+        table { font-size: 0.7em; }
+        
+        .accountInfo p  { font-size: 1.3em; }
+        .accountInfo h3 { font-size: 2.1em; } 
+        
+        .accountMenu { 
+            margin-top: 0.5em; 
+            font-size: 0.8em;  
+        }  
+    }
+    
+    @media screen and (max-width: 1280px) {
+        .navbar { font-size: 0.9em; }        
+        .sign { left: 2em; }
+        
+        .logo { font-size: 2.8em; }        
+        h4    { font-size: 1.3em; }
+        
+        .subcont { max-width: 90%; }
+        
+        #TM_icon { width: 21em; margin-left: 6em; }
+
+        .iDescr {          
+          font-size: 1.2em;
+          width: 50%;
+          margin-top: -1em;
+        }
+        .iDescr li {
+          margin-top: 1em;
+          margin-bottom: 1.7em;          
+        }
+        
+        .price-box { 
+          width: 50em;
+          font-size: 0.75em; 
+        }
+    }    
+    
+    @media screen and (max-width: 1200px) {  
+        .sign { left: 1em; }
+        
+        .subcont { 
+          max-width: 100%;
+          margin-top: 12em; /*set to a negative number 1/2 of your height*/
+          margin-left: -30em; /*set to a negative number 1/2 of your width*/
+        }
+        
+        .iDescr {          
+          font-size: 1.1em;
+          width: 55%;
+          margin-top: -1em;
+        }
+        
+        #TM_icon { 
+          width: 20em; 
+          margin-left: 2em; 
+        }
+        
+        .price-box { 
+          width: 50em;
+          font-size: 0.7em; 
+        }
+        .frst { margin-top: 0.7em; }
+    }  
+    
+    @media screen and (max-width: 1023px) {
+        .sign { left: 0em; }
+        
+        .subcont { 
+          width: 60em;
+          margin-top: 12em; /*set to a negative number 1/2 of your height*/
+          margin-left: -30em; /*set to a negative number 1/2 of your width*/
+        }
+        
+        #TM_icon { width: 18em; }
+
+        .iDescr {          
+          font-size: 1.2em;
+          width: 55%;
+        }
+        .iDescr li {margin-bottom: 1em;}
+        
+        .accountInfo p  { font-size: 0.9em; }
+        .accountInfo h3 { font-size: 1.8em; } 
+        
+        .accountMenu { 
+            margin-top: 0.3em; 
+            font-size: 0.7em;  
+        }  
+    }
+        
+    @media screen and (max-width: 975px) {
+        .subcont { 
+          width: 56em;
+          margin-top: 12em; /*set to a negative number 1/2 of your height*/
+          margin-left: -27.5em; /*set to a negative number 1/2 of your width*/
+        }
+        
+        .price-box {
+          width: 30em;
+          font-size: 0.9em;
+        }
+        .frst { margin-top: 0.1em; }
+    }   
+        
+    @media screen and (max-width: 890px) { 
+        .nav, .navbar { display: none; }
+                
+        .container-fluid { min-height: 900px; }
+        
         .mobmenu {
             position: fixed;
             display: block;
-            width: 80%; 
+            width: 70%; 
             height: 100%;
             z-index: 10;
+        }        
+        
+        .cont1 { margin-top: 5em; }
+        
+        .logo { font-size: 3em; }        
+        h4    { font-size: 1.5em; }
+        
+        .subcont {             
+          top: inherit;
+          left: inherit;
+          width: 100%;
+          margin: 3em auto;
         }
+                
+        .iImg {  float: none; } 
+        #TM_icon { width: 16em; margin: 0 auto;}
 
-        .nav, .navbar { display: none; }
+        .iDescr {
+          position: relative;
+          float: none;
+          font-size: 1.4em;
+          width: 70%;
+          margin: 2em auto;
+        }
+        .iDescr li {
+          margin-top: 1em;
+          line-height: 1.3;
+        }
+        .popul { text-align: center; }
 
+        table { 
+            margin: 1em 0 0 0;
+            font-size: 0.5em;
+        }
+        
+        .accountInfo    { width: 30%; }
+        .accountInfo p  { font-size: 0.8em; }
+        .accountInfo h3 { font-size: 1.5em; } 
+        
+        .accountMenu { 
+            margin-top: 0.1em; 
+            font-size: 0.7em;
+            width: 70%;
+        }
+        .accountMenu .u1 {margin-bottom: 2.1em;}
+    }
+    
+    @media screen and (max-width: 500px) {
+        table { font-size: 0.5em; }
+        
+        .accountInfo { width: 40%; }
+        
+        .accountMenu { width: 60% } 
+        .accountMenu ul li {
+            text-decoration: none;
+            display: block;
+        }
     }
     
