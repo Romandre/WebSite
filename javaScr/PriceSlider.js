@@ -12,6 +12,7 @@ $(document).ready(function() {
           });
 
           //Added, set initial value.
+          $("#slider").draggable();
           $("#amount").val(0);
           $("#amount-label").text(0);
           update();

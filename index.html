@@ -10,9 +10,10 @@
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <!-- Latest jQuery -->
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-    <script src="javaScr/scriptMainPage.js" type="text/javascript"></script>    
+    
     <script src="remodal/remodal.js" type="text/javascript"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -25,31 +26,46 @@
     <link href="remodal/remodal-default-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/maincss.css" rel="stylesheet" type="text/css"/>    
   </head>
-  <body>
+  <body class="pushmenu-push">
     <!-- Navigation bar -->
     <nav class="navbar" >
       <div class="container">        
         <div id="navbar">
           <ul class="nav navbar-nav">
-            <li><a href="#" class="f2" id="scrollToTop">Scroll To Top</a></li>           
+            <li><a href="#" class="f2" id="scrollToTop">Scroll To Top</a></li>
+            <li><a href="#" class="f2" id="frstScreen">First screen</a></li>
             <li><a href="#" class="f2" id="c1">About the platform</a></li>
             <li><a href="#" class="f2" id="c2">Prices and costs</a></li>
             <li><a href="#" class="f2" id="c3">Get it now!</a></li>
             <li><a href="#" class="f2" id="c4">Contacts</a></li>
             <li><a href="#" class="f2" id="c5">Clients feedback</a></li>
-            <li><a href="#modal" class="f2 sign" id="remodalW">Online account</a></li>
+            <li><a href="#modal" class="f2 signIn" id="remodalW">Online account</a></li>
           </ul>                                            
         </div>
       </div>          
     </nav> 
+    <!-- Mobile nav -->
+    <nav class="pushmenu pushmenu-left">
+        <p>Menu</p>
+        <a href="#" id="frstScreen">First screen</a>
+        <a href="#" id="c1">About the platform</a>
+        <a href="#" id="c2">Prices and costs</a>
+        <a href="#">Get it now!</a>
+        <a href="#">Contacts</a>
+        <a href="#">Clients feedback</a>
+        <a href="#modal" class="signIn_Small" id="remodalW">Online account</a>
+    </nav>
+    <div class="smallNavLine"> 
+        <div id="nav_list">Menu</div> 
+    </div>
     <!-- Remodal window -->
     <div class="remodal" data-remodal-id="modal">
         <a data-remodal-action="close" class="remodal-close"></a>
         <h1>Personal Account Page</h1>
-        <p>Please, sing is as a chief or an employee:</p>
-        <a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel!</a>
-        <a class="f3" href="Login.html">Chief account</a>
-        <a class="f4" href="LoginEmp.html">Employee account</a>
+        <p>Please, sing in or register:</p>
+        <a data-remodal-action="cancel" class="remodal-cancel" href="#">Cancel</a>
+        <a class="f3" href="Login.html">Sign In</a>
+        <a class="f4" href="LoginEmp.html">Register</a>
     </div>
     <!-- First screen -->
     <div class="container-fluid c0">  
@@ -58,7 +74,7 @@
         <h4>A platform for tracking working time!</h4>
         <div class="container subcont">           
           <div class="iImg">
-            <img src="img/TM_icon2.png" id="TM_icon" alt="trackingman_icon">
+            <img src="img/TM_icon.png" id="TM_icon" alt="trackingman_icon">
           </div>       
           <div class="iDescr">
             <ul>
@@ -74,21 +90,37 @@
       </div>
     </div>
     <!-- Second screen -->
-    <div class="c1 container-fluid">  
-      <div class="cont1">
-        <div class="container subcont">           
-          <div class="iImg">
-            <img src="img/TM_icon2.png" id="TM_icon" alt="trackingman_icon">
-          </div>       
-          <div class="iDescr">
-            <ul>
-                <li>The most popular application for counting working hours</li>
-                <li>Uses GPS to track location with an accuracy of 5 meters</li>
-                <li>Works fine inside of buildings</li>
-                <li>Offers useful and convenient statistics</li>                
-            </ul>
-          </div>    
-        </div>   
+    <div class="container-fluid c1">  
+      <div class="cont2 container">  
+          <div class="row">
+              <p class="col-md-4 col-xs-3 right"><img src="img/ach-mount.png" class="achiev"></p>
+              <p class="col-md-8 col-xs-9 ach_describe left big">Our application gives you opportunity to track 
+                                  employees at any <br> time of the day or night. Flexible 
+                                  configurations allow you <br> to personally adjust tracking 
+                                  the way you want for each employee <br> separately: work shifts, 
+                                  business area, routes, breaks and so on.</p>
+          </div>  
+          <div class="row">
+              <p class="col-md-8 col-xs-9 ach_describe right big">Tracking accuracy makes our application 
+                                  suitable for different <br> business types. It is still fine inside 
+                                  of buildings and in places with <br> poor GPS connection, instead using 
+                                  technology of <br> determining the location by Wi-Fi. </p>
+              <p class="col-md-4 col-xs-3 left"><img src="img/ach-accuracy.png" class="achiev"></p>
+          </div>   
+          <div class="row">
+              <p class="col-md-4 col-xs-3 right"><img src="img/ach-planet.png" class="achiev"></p>
+              <p class="col-md-8 col-xs-9 ach_describe left">It does not matter in which country
+                                               your company is situated. <br> We aimed 
+                                               to work at a distance at a high level! Our motto<br>
+                                               is "Your decision - our action!" </p>
+          </div>  
+          <div class="row">
+              <p class="col-md-8 col-xs-9 ach_describe right">We provide you the statistics with a 
+                                  convenient and user friendly <br> interface that will save you 
+                                  time in the calculation of salaries. <br> 
+                                  Using our application your business will go uphill!</p>
+              <p class="col-md-4 col-xs-3 left"><img src="img/ach-rise.png" class="achiev"></p>
+          </div>      
       </div>
     </div>
     <!-- Third screen -->
@@ -109,15 +141,15 @@
 
           <div class="price-form">
             <div class="form-group">
-              <label for="amount" class="col-md-8 col-sm-7 control-label frst">Number of employees: </label>
-              <div class="col-md-4 col-sm-5">
+              <label for="amount" class="col-sm-7 control-label frst">Number of employees: </label>
+              <div class="col-sm-5">
                 <input type="hidden" id="amount" class="form-control">
                 <p class="price lead" id="amount-label"></p>
               </div>
             </div>            
             <hr class="style">
             <div class="form-group total">
-              <label for="total" class="col-sm-7 control-label downfor"><strong>Total price: </strong></label>
+              <label for="total" class="col-sm-7 control-label downfor"><strong>Total price per month: </strong></label>
               <div class="col-sm-5">
                 <input type="hidden" id="total" class="form-control">
                 <p class="price lead" id="total-label"></p>
@@ -154,7 +186,8 @@
       </div>
     </div>    
   <!-- End of the code -->
-  <!-- Scripts connected -->  
+  <!-- Scripts connected --> 
+  <script src="javaScr/scriptMainPage.js" type="text/javascript"></script>    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>      
