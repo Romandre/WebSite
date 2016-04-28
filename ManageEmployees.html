@@ -5,6 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        
+        <!-- Latest jQuery -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    
+        <script src="remodal/remodal.js" type="text/javascript"></script>
         
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,10 +22,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
         <!-- My Styles -->
+        <link href="remodal/remodal.css" rel="stylesheet" type="text/css"/>
+        <link href="remodal/remodal-default-theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/maincss.css" rel="stylesheet" type="text/css"/>
         
     </head>
-    <body>
+    <body>      
+      <!-- Manage statistics table -->
       <div class="container-fluid">
         <div class="row statisticNav company"> 
             <div class="accountInfo">
@@ -33,53 +42,118 @@
               </ul>
               <ul>
                 <li><a href="PersonalAccountPage.html" class="tablesButton">Overview of the current year</a></li>
-                <li><a href="#"class="tablesButton active">Manage employees</a></li>
+                <li><a href="#" class="tablesButton active">Manage employees</a></li>
                 <li><a href="#" class="tablesButton">History</a></li>
               </ul>  
             </div>
         </div>        
         <div class="contTable table-responsive">
-          
-          <table class="table table-bordered table-condensed">
           <div>
-            <button>Add new employee</button>
-            <button>Remove new employee</button>
+            <a href="#modal2" class="addEmp">Add new person</a>            
           </div>
-           <caption>List of the employees</caption>
-           <tr class="tableMain">
-            <th>Employee</th>
-            <th>IMEI</th>
-            <th>Last location and time</th> 
-            <th>Rights of use</th> 
-           </tr>           
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Aare Jonson</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Adrian Clinton</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Alan Harper</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Bruce Willis</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Britany Hopkins</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Conor Safrano</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">David Beckham</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Donald Trump</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Dora Hilary</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Edgar Poe</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fred Durst</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Fiona Johnson</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Gordon Freeman</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Hanna Montana</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">James Patric</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Jessica Alba</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">John Snow</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Kurt Cobain</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Monica Bellucci </a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Nora Jones</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Petter Parker</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Peris Hilton</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Roger Federer</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Sasha Gray</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td></tr>
-           <tr><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Tatyana Kotova</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td></tr>
+          <table class="table myTable">          
+             <caption>List of the employees</caption>
+             <tr class="tableMain">
+               <th>Employee</th>
+               <th>IMEI</th>
+               <th>Last location and time</th> 
+               <th>Rights of use</th> 
+               <th></th> 
+             </tr>           
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Aare Jonson</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Adrian Clinton</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Alan Harper</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Bruce Willis</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Britany Hopkins</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Conor Safrano</a></td><td>35-209900-176148-23</td><td>9-10 Washington Square N, New York, NY 10003</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">David Beckham</a></td><td>35-209900-176148-23</td><td>109 W Houston St, New York, NY 10012</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>
+             <tr class="tableDitail"><td><a id="name" class="tableName" href="#" title="Ditailed info of a person">Donald Trump</a></td><td>35-209900-176148-23</td><td>30 Cooper Sq,New York, NY 10003</td><td>Normal</td><td><button>Remove employee</button><button>Edit</button></td></tr>          
           </table>      
         </div>
       </div>
-      
+      <!-- Remodal window -->
+      <div class="remodal" data-remodal-id="modal2">
+        <a data-remodal-action="close" class="remodal-close"></a>
+        <form class="addEmpForm" action="index.html" method="post">      
+          <h1>Sign Up</h1>
+          <fieldset>
+            <legend><span class="number">1</span>Basic persons info</legend>
+            <label for="name">First name:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="mail">Family name:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password">
+
+            <label>Position:</label>
+            <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developor">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer"> Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="WordPress_developer">WordPress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="Android_developer">Androild Developer</option>
+              <option value="iOS_developer">iOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="secretary">Secretary</option>
+              <option value="maintenance">Maintenance</option>
+            </optgroup>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="number">2</span>Persons profile</legend>
+            <label for="bio">Some important info:</label>
+            <textarea id="bio" name="user_bio"></textarea>
+          </fieldset>
+          <fieldset>
+            <label for="job">Rights:</label>
+            <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developor">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="rails_developer"> Rails Developer</option>
+              <option value="web_designer">Web Designer</option>
+              <option value="WordPress_developer">WordPress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="Android_developer">Androild Developer</option>
+              <option value="iOS_developer">iOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="secretary">Secretary</option>
+              <option value="maintenance">Maintenance</option>
+            </optgroup>
+            </select>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+
+          </fieldset>
+          <button class="addEmpButn cancelAdd">Cancel</button>
+          <button class="addEmpButn" type="submit">Add new person</button>
+        </form>
+      </div>
+      <script src="remodal/remodal.min.js" type="text/javascript"></script>
     </body>
 </html>

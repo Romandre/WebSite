@@ -19,20 +19,21 @@
     <!-- Styles -->
     <link href="css/maincss.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body>
+  <body class="login_page">
     <div class="container">
       <div class="cont_log">
         <div id="login">
-          <h2>Chief login form</h2>
-          <form action="#" id="submit">
-            <label>Company code: </label>
-            <input class="g" id="name" name="username" placeholder="Username" type="text" >
+          <h2>Please, introduce yourself:</h2>
+          <form action="#">
+            <label>ID number: </label>
+            <input class="g" id="name" name="username" placeholder="" type="text" >
             <label>Password: </label>
-            <input class="g" id="password" name="password" placeholder="**********" type="password">
-            <input name="submit" type="submit" value="Go in!">            
+            <input class="g" id="password" name="password" placeholder="" type="password">
+            <input id="submit" name="submit" type="submit" value="Go in!">            
           </form>
         </div> 
-          <a href="index.html"><button>Back to main page</button></a>
+          <a href="index.html" class="remodal-cancel f_log">< Back to main page</a>
+          <a href="index.html"><button>Log in to the employee page</button></a>
       </div>       
     </div>
     <script src="javaScr/scriptLoginPage.js" type="text/javascript"></script>  
