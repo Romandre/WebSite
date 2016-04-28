@@ -578,8 +578,8 @@ hr.style {
   position: absolute;  
   top: 50%;
   left: 50%;
-  max-width:40em;
-  padding: 1em;
+  max-width: 40em;
+  padding: 2em;
   margin-top: -10em; /*set to a negative number 1/2 of your height*/
   margin-left: -20em; /*set to a negative number 1/2 of your width*/
   border: 1px solid #ccc;
@@ -645,6 +645,7 @@ input[type=submit]:hover { background-color:#2175c9; }
 .employee { background-color: rgb(170, 218, 122); }
 
 .accountInfo {
+  font-family: 'Muli', sans-serif;  
   position: relative;
   padding-left: 1.6em;
   line-height: 1.2;
@@ -674,7 +675,7 @@ input[type=submit]:hover { background-color:#2175c9; }
   background: white;  
   padding: 0.3em 0.6em 0.3em 0.6em;
   margin-right: 1em;
-  border-radius: 0.5em;
+  background: white;
 }
 .menuButton:hover {
   text-decoration: none;
@@ -721,6 +722,7 @@ input[type=submit]:hover { background-color:#2175c9; }
   width: 100%;
   text-align: left;
   border-top: 2px solid #95979c;
+  background-color: rgb(247,247,247);
 }
 
 .myTable th,
@@ -731,15 +733,17 @@ input[type=submit]:hover { background-color:#2175c9; }
   font-family: 'Montserrat', sans-serif;  
   font-size: 1.2em;
   font-weight: 400;
-  background: rgb(220,220,220);  
+  color: rgb(85,85,85);
+  background: rgb(210,210,210);  
+  border-bottom: 2px solid #95979c;
 }
 
-.tableHead { }
+.tableHead { color: black; font-weight: bold; }
 
 .tableDitail {
+  font-family: 'Muli', sans-serif;
   font-weight: bold;
-  color: brown;
-  background-color: rgb(245,245,245);
+  color: #b92f2f;
 }
 
 .tableName { font-size: 1.1em; }
@@ -762,6 +766,25 @@ input[type=submit]:hover { background-color:#2175c9; }
   padding: 0.8em 1.1em 0.7em 1.1em;
   margin: 1.1em 0 1.1em 1em;
   box-shadow: 0 0.3em 5px lightgray;
+}
+
+.removeEmp {
+  background-color: #ef4e6e;
+  border: 1px solid #ef4e6e;
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 0.3em 0.2em 0.3em;
+}
+
+.editEmp {    
+  background-color: #4bc970;
+  border: 1px solid #4bc970;
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  margin-right: 1.5em; 
 }
 
 /**********************************/
